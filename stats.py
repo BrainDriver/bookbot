@@ -2,10 +2,10 @@ def count_words(text):
     print(f"{len(text.split())} words found in the document")
 
 def count_characters(text):
-    dict={}
+    count={}
     for char in text.lower():
-        if char in dict:
-            dict[char]+=1
+        if char in count:
+            count[char]+=1
         else:
-            dict[char]=1
-    return dict
+            count[char]=1
+    return count
